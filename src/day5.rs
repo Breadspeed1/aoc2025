@@ -1,5 +1,3 @@
-use std::collections::HashSet;
-
 pub fn run() -> i64 {
     let input = std::fs::read_to_string("inputs/day5.txt").unwrap();
 
@@ -18,14 +16,14 @@ pub fn run() -> i64 {
         })
         .collect();
 
-    let ingredients: Vec<i64> = split[1]
-        .split("\n")
-        .map(|v| {
-            let i_v: i64 = v.parse().unwrap();
+    // let ingredients: Vec<i64> = split[1]
+    //     .split("\n")
+    //     .map(|v| {
+    //         let i_v: i64 = v.parse().unwrap();
 
-            i_v
-        })
-        .collect();
+    //         i_v
+    //     })
+    //     .collect();
 
     ranges.sort_by(|r1, r2| r1.0.cmp(&r2.0));
 
